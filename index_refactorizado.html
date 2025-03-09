@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club de Fútbol</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Club de Fútbol</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El Club de Fútbol</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Imágenes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Más Opciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Bienvenidos al Club de Fútbol Popayork</a></li>
+                  <li><a class="dropdown-item" href="#equipo">Conoce a nuestro equipo Popayork</a></li>
+                  <li><a class="dropdown-item" href="#partidos">Próximos Partidos</a></li>
+                  <li><a class="dropdown-item" href="#galeria_nuestro_equipo">Galería</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/foto1.jpg" class="d-block w-100" alt="Imagen 1" style="height: 400px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/foto2.jpg" class="d-block w-100" alt="Imagen 2" style="height: 400px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/foto3.jpg" class="d-block w-100" alt="Imagen 3" style="height: 400px; object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div> <br>
+
+    <header>
+        <h1 style="color: blue;">Bienvenidos al Club de Fútbol Popayork</h1> <br>
+        <table class="table">
+            <thead class="table-light">
+              <tr>
+                <th scope="col">ID Usuario</th>
+                <th scope="col">Nombres y Apellidos Completos</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mateo Rivera Rodallega</td>
+                <td>admin</td>
+                <td>revisar</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>secretario</td>
+                <td>analizador</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>empleado</td>
+                <td>peresozo</td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button" class="btn btn-primary">REGISTRAR</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-secondary">VER</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-success">EDITAR</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-danger">ELIMINAR</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    
+    </header> <br>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Club de Fútbol Popayork. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
